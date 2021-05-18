@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap");
+:root {
+  --green: #8bc34a;
+  --gray: #444b51;
+  --transition: 0.3s ease;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+ul {
+  list-style: none;
+}
+.underline {
+  border: none;
+  background-color: var(--green);
+  height: 3px;
+}
+
+/* nav bar */
+nav .navbar {
+  color: black;
+}
+nav .navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 700 !important;
+}
+nav .nav-link {
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: color var(--transition);
+}
+nav.navbar .nav-link.active,
+nav.navbar .nav-link:hover {
+  color: var(--green) !important;
+}
+
+/* header - slider*/
+.carousel-caption {
+  height: 100%;
+}
+.carousel-caption h2 {
+  font-size: 6rem;
+}
+
+/* welcome */
+.welcome h2 span,
+.welcome a,
+.welcome h3 {
+  color: var(--green);
+}
+
+.welcome h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.welcome h2 span {
+  font-weight: 900;
+}
+.welcome h3,
+.welcome a {
+  font-weight: 700;
+}
+.welcome h3 {
+  font-size: 1.6rem;
+}
+.welcome p {
+  margin-bottom: 20px;
+}
+/* services */
+.services h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.services .underline {
+  width: 300px;
+  margin: 30px auto 40px;
+}
+
+.services i {
+  font-size: 2rem;
+  color: var(--green);
+  margin-bottom: 20px;
+}
+
+.services h5 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* hairstyle */
+.hairstyle .col-md-5 div {
+  padding: 100px 50px;
+  margin-left: -70px;
+}
+.hairstyle h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.hairstyle .underline {
+  width: 100px;
+}
+
+/* experience */
+.experience {
+  background-image: linear-gradient(
+      rgba(19, 19, 19, 0.6),
+      rgba(19, 19, 19, 0.6)
+    ),
+    url(img/experience.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 150px 0;
+}
+
+.experience h2 {
+  font-size: 4rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.experience h2 i {
+  font-size: 5srem;
+}
+
+/* footer */
+footer {
+  background-color: var(--gray);
+}
+
+footer article > a {
+  color: var(--green);
+  margin-left: 15%;
+  font-size: 1.3rem;
+}
+footer a:first-child {
+  margin-left: 0;
+}
